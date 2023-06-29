@@ -1,1 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="itsneko个人博客">
+    <title>个人博客</title>
+    <meta name="keywords" content="个人博客">
+    <meta name="description" content="WebStack - 收集国内外优秀资源网站，itsneko收藏导航">
+    <link rel="icon" type="image/png" href="/medias/favicon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/fonts/fontsawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/xenon-core.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/xenon-components.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/xenon-skins.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/css/search.css">
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/jquery-1.11.1.min.js"></script>
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <style>
+        footer.main-footer .go-up {
+            width: 45px;
+            float: right;
+            position: fixed;
+            right: -10px;
+            bottom: 30px;
+            z-index: 10;
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+ 
+        footer.main-footer .go-up a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            border-radius: 50%;
+            background: rgba(123, 123, 123, .5);
+            color: #fff;
+            font-size: 20px;
+            line-height: 35px;
+            padding: 0
+        }
+        #search-list {
+            display: none;
+        }
+        .logo-expanded img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .has-sub {
+            cursor: pointer;
+        }
+   #kele{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            color: aliceblue;
+            line-height: 3.5;
 
+letter-spacing: 1px;
+
+        }
+    </style>
+</head>
+ 
+<body class="page-body">
+    <div class="page-container">
+        <div class="sidebar-menu toggle-others fixed">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <div class="logo"><a href="#" class="logo-expanded"><img
+                                src="头像.jpg"
+                                width="100%" alt=""></a><p id="kele">可乐也没你甜</p></div>
+                    <div class="mobile-menu-toggle visible-xs"><a href="#" data-toggle="user-info-menu"><i
+                                class="linecons-cog"></i></a><a href="#" data-toggle="mobile-menu"><i
+                                class="fa-bars"></i></a></div>
+                </header>
+                <ul id="main-menu" class="main-menu">
+                
+                    <li><a><i class="linecons-lightbulb"></i> <span class="title">常用工具</span></a>
+                        <ul>
+                            <li><a href="#速查手册" class="smooth"><span class="title">速查手册</span></a></li>
+                            <li><a href="#常用推荐" class="smooth"><span class="title">常用推荐</span></a></li>
+                            <li><a href="#热门工具" class="smooth"><span class="title">热门工具</span></a></li>
+                            <li><a href="#快递物流" class="smooth"><span class="title">快递物流</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a><i class="linecons-thumbs-up"></i> <span class="title">线上操作</span></a>
+                        <ul>
+                            <li><a href="#资源搜索" class="smooth"><span class="title">资源搜索</span></a></li>
+                            <li><a href="#视频解析" class="smooth"><span class="title">视频解析</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a><i class="linecons-desktop"></i> <span class="title">素材资源</span></a>
+                        <ul>
+                            <li><a href="#图片素材" class="smooth"><span class="title">图片素材</span></a></li>
+                            <li><a href="#在线配色" class="smooth"><span class="title">在线配色</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a><i class="linecons-search"></i> <span class="title">程序员</span></a>
+                        <ul>
+                            <li><a href="#API接口" class="smooth"><span class="title">API接口</span></a></li>
+                            <li><a href="#设计素材" class="smooth"><span class="title">设计素材</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a><i class="linecons-cloud"></i> <span class="title">与我相关</span></a>
+                        <ul>
+                            <li><a href="#我的站点" class="smooth"><i class="linecons-doc"></i> <span
+                                        class="title">我的站点</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#更多导航" class="smooth"><i class="linecons-paper-plane"></i> <span
+                                class="title">更多导航</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <nav class="navbar user-info-navbar" role="navigation">
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    <li class="hidden-sm hidden-xs"><a href="#" data-toggle="sidebar"><i class="fa-bars"></i></a></li>
+                    <li><a href="index.html" target="_blank" style="padding:30px 20px"><i class="fa fa-home"></i> 博客首页</a></li>                   
+                    <li><a id="tp-weather-widget" style="padding:28px 20px"></a>
+                        <script>
+                            ! function (e, t, n, a, o, i, c, r) {
+                                r = function () {
+                                        i = t.createElement(n), c = t.getElementsByTagName(n)[0], i.src = o, i.charset =
+                                            "utf-8", i.async = 1, c.parentNode.insertBefore(i, c)
+                                    }, e.SeniverseWeatherWidgetObject = a, e[a] || (e[a] = function () {
+                                        (e[a].q = e[a].q || []).push(arguments)
+                                    }), e[a].l = +new Date, e.attachEvent ? e.attachEvent("onload", r) : e
+                                    .addEventListener("load", r, !1)
+                            }(window, document, "script", "SeniverseWeatherWidget",
+                                "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt(((new Date).getTime() /
+                                    1e8).toString(), 10)), window.SeniverseWeatherWidget("show", {
+                                flavor: "slim",
+                                location: "WX4FBXXFKE4F",
+                                geolocation: !0,
+                                language: "auto",
+                                unit: "c",
+                                theme: "auto",
+                                token: "a39cd5a0-4024-4cb2-85c6-0250317058db",
+                                hover: "enabled",
+                                container: "tp-weather-widget"
+                            })
+                        </script>
+                    </li>
+                </ul>
+            </nav>
+            <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/search.js"></script>
+            
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="速查手册"></i>速查手册</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="快速进入MDN的CSS参考手册"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="ui/msdn.jpg" class="lozad img-circle" width="40" src="ui/ui (15).jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>CSS参考-MDN</strong></a><p class="overflowClip_2">快速进入MDN的CSS参考手册</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://developer.mozilla.org/zh-CN/docs/Web/API&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="快速进入MDN的Web API参考"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="ui/msdn.jpg" class="lozad img-circle" width="40" src="ui/msdn.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Web API参考-MDN</strong></a><p class="overflowClip_2">快速进入MDN的Web API参考</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://markodenic.com/tools/buttons-generator/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="免费CSS按钮生成器，在线CSS按钮模板"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hd33626da4cac472d99e150ae80ac2ff4q.png" class="lozad img-circle" width="40" src="ui/f.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>CSS按钮在线生成</strong></a><p class="overflowClip_2">免费CSS按钮生成器，在线CSS按钮模板</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.zol.com.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="中关村在线是一家专业的电子信息资讯网站，可以查询各大品牌的手机、电脑、数码各种电子产品数据和价格。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="ui/zhongguancun.png" class="lozad img-circle" width="40" src="ui/zhongguancun.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>中关村（ZOL）</strong></a><p class="overflowClip_2">中关村在线是一家专业的电子信息资讯网站，可以查询各大品牌的手机、电脑、数码各种电子产品数据和价格。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.staticfile.org/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="免费、快速、开放的 CDN 服务"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hebf9e5b0992e452fb0af9f0584d256b7g.png" class="lozad img-circle" width="40" src="ui/6.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Staticfile CDN</strong></a><p class="overflowClip_2">免费、快速、开放的 CDN 服务</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://jscdn.upai.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="又拍云JS库加速服务"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H0961ac0c572b4caea27e77a47f152b19U.png" class="lozad img-circle" width="40" src="ui/7 (1).jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>又拍云JS库加速服务</strong></a><p class="overflowClip_2">APP界面截图参考</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.csdn.net/?spm=1035.2022.3001.4476meditor&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="CSDN是全球最大的中文软件开发者技术社区,CSDN的意思就是“中国软件开发网”,95%的软件开发者都会访问CSDN,通过博客、论坛、下载、资讯等服务获取软件开发的相关知识"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H21eee713a2274f1596f73d434f76ad4aw.png" class="lozad img-circle" width="60" src="ui/csdn.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>CSDN-社区</strong></a><p class="overflowClip_2">CSDN是全球最大的中文软件开发者技术社区,CSDN的意思就是“中国软件开发网”,95%的软件开发者都会访问CSDN,通过博客、论坛、下载、资讯等服务获取软件开发的相关知识。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.w3school.com.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="在 W3School，你可以找到你所需要的所有的网站建设教程"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H21eee713a2274f1596f73d434f76ad4aw.png" class="lozad img-circle" width="60" src="ui/w3school.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>web入门教程</strong></a><p class="overflowClip_2">在 W3School，你可以找到你所需要的所有的网站建设教程</p></div></div></div></div>
+            </div>
+            <br>
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="常用推荐"></i>常用推荐</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.smartedu.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="国家出品的一个学习网站，涵盖了小学、初中、高中、大学、职业教育的课程。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae04.alicdn.com/kf/H147985c637ff42259f16d2a4400ea837k.jpg" class="lozad img-circle" width="60" src="ui/guojiajiaoyu.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1">国家智慧教育公共服务平台</strong></a><p class="overflowClip_2">国家出品的一个学习网站，涵盖了小学、初中、高中、大学、职业教育的课程。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.icourse163.org&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="中国大学MOOC是一款为大学生打造的学习软件,软件汇集了国内顶尖的名师,还有国内顶尖大学的教学课程,真正意义上实现了教学资源共享。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/07/10/c72ced84b64377d9b709d98865fe7d2c.png" class="lozad img-circle" width="60" src="ui/zhongguodaxue.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>中国大学mooc（慕课）</strong></a><p class="overflowClip_2">中国大学MOOC是一款为大学生打造的学习软件,软件汇集了国内顶尖的名师,还有国内顶尖大学的教学课程,真正意义上实现了教学资源共享。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.bilibili.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="哔哩哔哩（bilibili.com)是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae03.alicdn.com/kf/Ha6b9cbd364c34469bf1b3e33fe37ae9cn.jpg" class="lozad img-circle" width="60" src="ui/bilibili.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>哔哩哔哩</strong></a><p class="overflowClip_2">哔哩哔哩（bilibili.com)是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://weibo.com/newlogin?tabtype=weibo&gid=102803&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2F%3Fcategory%3D1760concepts/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="随时随地发现新鲜事!微博带你欣赏世界上每一个精彩瞬间,了解每一个幕后故事。分享你想表达的,让全世界都能听到你的心声!"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae02.alicdn.com/kf/Hf9be67f4f5a44150aec70e2c428eab35V.jpg" class="lozad img-circle" width="60" src="ui/weibo.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>微博</strong></a><p class="overflowClip_2">随时随地发现新鲜事!微博带你欣赏世界上每一个精彩瞬间,了解每一个幕后故事。分享你想表达的,让全世界都能听到你的心声!</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.zhihu.com/topic/19550228/hot&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="知乎是中文互联网知名的可信赖问答社区,致力于构建一个人人都可以便捷接入的知识分享网络,让人们便捷地与世界分享知识、经验和见解,发现更大的世界。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/07/08/125b85d7b6cbdd3789bf4bf70bfb112b.png" class="lozad img-circle" width="60" src="ui/zhihu.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>知乎</strong></a><p class="overflowClip_2">知乎是中文互联网知名的可信赖问答社区,致力于构建一个人人都可以便捷接入的知识分享网络,让人们便捷地与世界分享知识、经验和见解,发现更大的世界。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://tieba.baidu.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="百度贴吧——全球最大的中文社区。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae04.alicdn.com/kf/He28fb8929ba043bc8b3b3b4a7808b0a36.jpg" class="lozad img-circle" width="60" src="ui/baidutieba.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>百度贴吧</strong></a><p class="overflowClip_2">百度贴吧——全球最大的中文社区。</p></div></div></div></div></div>
+            <br>
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="热门工具"></i>热门工具</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://jingzhunyun.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="精准云工具是一个功能非常强大的在线工具导航网站,它集合了几百个在线工具,每个工具都是非常实用。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="ui/yungongju.png" class="lozad img-circle" width="60" src="ui/yungongju.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>精准云工具</strong></a><p class="overflowClip_2">精准云工具是一个功能非常强大的在线工具导航网站,它集合了几百个在线工具,每个工具都是非常实用。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.zaiwen.top/chat-research#/home&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="你好！我是最近爆火的人工智能模型-GPT-AI软件，理论上我可以回答你问的任何问题，如可以为你写代码、写作文、写诗歌、写大纲、写情诗、写祝福、写检讨、写文案、写总结概要、写社交动态，优化文章，智能翻译、作业解答等，现在就可以免费的测试下了哦！"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://pic.alexhchu.com/favicon.ico" class="lozad img-circle" width="40" src="ui/gpt-ai.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>ChatGPT</strong></a><p class="overflowClip_2">你好！我是最近爆火的人工智能模型-GPT-AI软件，理论上我可以回答你问的任何问题，如可以为你写代码、写作文、写诗歌、写大纲、写情诗、写祝福、写检讨、写文案、写总结概要、写社交动态，优化文章，智能翻译、作业解答等，现在就可以免费的测试下了哦！</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.topdodo.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="度度网是一个非常实用的在线图片处理工具，主要提供图片大小压缩、图片裁剪、图片去水印、等服务"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hb7bb4759392e45089d26893f25139651O.jpg" class="lozad img-circle" width="60" src="ui/duduwang.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>度度网在线图片处理</strong></a><p class="overflowClip_2">度度网是一个非常实用的在线图片处理工具，主要提供图片大小压缩、图片裁剪、图片去水印、等服务</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.zhuangjiye.com/85.html&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Adobe赢政天下版是由vposy大神发布的版本文件完整，破解完美。内含windows系统Adobe版本cs6/2017/2018/2019/2020/2021/2022//2023。大家可根据自己的电脑系统及配置选择下载安装，win7系统就安装2019及以前版本。包含ps/ai/ae/pr/an等"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/yumusb/blog_img/avatar.jpg" class="lozad img-circle" width="40" src="ui/Adobe.png"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Adobe系列软件</strong></a><p class="overflowClip_2">Adobe赢政天下版是由vposy大神发布的版本文件完整，破解完美。内含windows系统Adobe版本cs6/2017/2018/2019/2020/2021/2022//2023。大家可根据自己的电脑系统及配置选择下载安装，win7系统就安装2019及以前版本。包含ps/ai/ae/pr/an等</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://zhutix.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="一个专注于电脑主题、壁纸、图标、皮肤等酷炫的桌面美化素材的网站"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/yumusb/blog_img/avatar.jpg" class="lozad img-circle" width="60" src="ui/zhimeihua.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>致美化</strong></a><p class="overflowClip_2">一个专注于电脑主题、壁纸、图标、皮肤等酷炫的桌面美化素材的网站</p></div></div></div></div></div>
+            <br>
+ 
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="快递物流"></i>快递物流</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.sf-express.com/chn/sc&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="国内最大的综合物流服务商,快递一站式服务,客服电话：95338"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H3388ad3aea834d2dbc173620539adaecX.png" class="lozad img-circle" width="40" src="ui/SF.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>顺丰速运</strong></a><p class="overflowClip_2">国内最大的综合物流服务商,物流快递一站式服务,客服电话：95338</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.guoguo-app.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="阿里巴巴旗下菜鸟网络官方出品，寄快递、查快递,物流快递一站式服务,客服电话：9519666"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H63879ef7df4e4a0d8848c51b619c36195.png" class="lozad img-circle" width="40" src="ui/cainiao.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>菜鸟裹裹</strong></a><p class="overflowClip_2">阿里巴巴旗下菜鸟网络官方出品，寄快递、查快递,物流快递一站式服务,客服电话：9519666</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.ems.com.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="中国邮政速递物流,快递一站式服务,客服电话：11183"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H2476fa8e14fe4df0ba5c4fee04c41489N.jpg" class="lozad img-circle" width="40" src="ui/youzhengEMS.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>邮政EMS</strong></a><p class="overflowClip_2">中国邮政速递,物流快递一站式服务,客服电话：11183</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.yto.net.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="圆通速递官方网站,物流快递一站式服务,客服电话：95554"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H15d07cd5b0254e50b57ef28a55f8fbfaV.png" class="lozad img-circle" width="40" src="ui/yuantong.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>圆通速递</strong></a><p class="overflowClip_2">圆通速递官方网站,物流快递一站式服务,客服电话：95554</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.sto.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="申通快递官方网站,物流快递一站式服务,客服电话：95543"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae04.alicdn.com/kf/U9f79ca1667e74fd7aba82a8ab6ba4719g.jpg" class="lozad img-circle" width="40" src="ui/sto.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>申通快递</strong></a><p class="overflowClip_2">申通快递官方网站,物流快递一站式服务,客服电话：95543</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.zto.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="中通快递官网为您提供中通快递单号(运单)跟踪查询,投诉电话查询,运费报价查询,中通营业网点查询,在线下单(寄件)等服务,全国统一客服热线：95311"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae03.alicdn.com/kf/Ue5b939c07c9040209ee5a35ab402f83bz.jpg" class="lozad img-circle" width="40" src="ui/zto.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>中通快递</strong></a><p class="overflowClip_2">中通快递官网为您提供中通快递单号(运单)跟踪查询,投诉电话查询,运费报价查询,中通营业网点查询,在线下单(寄件)等服务,全国统一客服热线：95311</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.deppon.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="德邦快递官方网站-物流快递一站式服务,客服电话：95353"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H7d54b7b0f0e64197b6862b1430a0b6fcI.png" class="lozad img-circle" width="40" src="ui/debang.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>德邦快递</strong></a><p class="overflowClip_2">德邦快递官方网站-物流快递一站式服务,客服电话：95353</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.jdl.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="京东物流向您提供仓配服务、快递快运服务、大件服务、冷链服务、跨境服务。客服专线950616，7*14小时服务。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae04.alicdn.com/kf/Ub33818daa339436b8a1bf30b2032cc2dR.jpg" class="lozad img-circle" width="40" src="ui/JD.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>京东快递e</strong></a><p class="overflowClip_2">京东物流向您提供仓配服务、快递快运服务、大件服务、冷链服务、跨境服务。客服专线950616，7*14小时服务。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.jtexpress.com.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="极兔致力于利用先进的IT管理系统，提升快递时效和改善客户服务质量，以寄件便利、快速派件、高效理赔作为主要服务宗旨，客服电话：956025。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae02.alicdn.com/kf/Ue132bd56457045a985e759e7634999f35.jpg" class="lozad img-circle" width="40" src="ui/JT.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>极兔速递</strong></a><p class="overflowClip_2">极兔致力于利用先进的IT管理系统，提升快递时效和改善客户服务质量，以寄件便利、快速派件、高效理赔作为主要服务宗旨，客服电话：956025。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://www.yundaex.com/cn/index.php&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="韵达速递官方网站,物流快递一站式服务,客服电话：95546"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/U99566564f4d64a849a620cb67baf9781A.jpg" class="lozad img-circle" width="40" src="ui/yunda.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>韵达速递</strong></a><p class="overflowClip_2">韵达速递官方网站,物流快递一站式服务,客服电话：95546</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.kuaidi100.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="一站查询全球1000+快递公司单号查询、价格查询、时效查询"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H16c10e578e5046cea972eca16d1499f7n.png" class="lozad img-circle" width="40" src="ui/kuaidi100.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>快递100</strong></a><p class="overflowClip_2">一站查询全球1000+快递公司单号查询、价格查询、时效查询</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://sswz.spb.gov.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="快递投诉国家邮政局申诉网站，构建邮政业申诉服务平台，激发邮政行业发展活力 提升邮政行业监管效能 推动行业绿色健康发展。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H90861c9264ff48d0aa061ee5570d65232.png" class="lozad img-circle" width="40" src="ui/kuaiditousu.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>快递投诉</strong></a><p class="overflowClip_2">快递投诉国家邮政局申诉网站，构建邮政业申诉服务平台，激发邮政行业发展活力 提升邮政行业监管效能 推动行业绿色健康发展。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://www.eoroo.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="中国快递网，专注于快递领域企业服务的门户网站。提供专业快递行业资讯、快递商机、快递招商、快递企业及产品。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="http://cdn.bnxb.com/img/logo1.png" class="lozad img-circle" width="40" src="ui/zhongguokuaidiwang.gif" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>中国快递网</strong></a><p class="overflowClip_2">中国快递网，专注于快递领域企业服务的门户网站。提供专业快递行业资讯、快递商机、快递招商、快递企业及产品。</p></div></div></div></div></div>
+            <br>
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="资源搜索"></i>资源搜索</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://yiso.fun/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="阿里云盘资源搜索"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H61af85bcc64b4f1e99b1d9bc690fd8c8M.png" class="lozad img-circle" width="40" src="ui/yisou.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>易搜</strong></a><p class="overflowClip_2">阿里云盘资源搜索</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://fanwen.chazidian.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="范文网是查字典为广大用户提供:范文,范文大全,范文网,论文范文,个人简历范文,演讲稿范文,实习报告范文，公文写作范文,心得体会范文,工作总结范文,合同范本,工作计划范文,自我鉴定范文等等一系列常用范文。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://files.alexhchu.com/2020/08/18/92a49d12f7217.png" class="lozad img-circle" width="40" src="ui/fanwenmuban.png"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>范文模版</strong></a><p class="overflowClip_2">范文网是查字典为广大用户提供:范文,范文大全,范文网,论文范文,个人简历范文,演讲稿范文,实习报告范文，公文写作范文,心得体会范文,工作总结范文,合同范本,工作计划范文,自我鉴定范文等等一系列常用范文。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.666888.best/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="溜发资源网”是一个广受欢迎的软件分享网站，提供了大量的免费软件的下载和分享。它的网址是www.666888.best。 该网站的特点是它提供了一些非常实用的软件资源，包括各种类型的软件、游戏、音乐、影视等等。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hac93258007754340927a1e0712c760ddf.png" class="lozad img-circle" width="40" src="ui/liufa.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>溜发资源网</strong></a><p class="overflowClip_2">溜发资源网”是一个广受欢迎的软件分享网站，提供了大量的免费软件的下载和分享。它的网址是www.666888.best。 该网站的特点是它提供了一些非常实用的软件资源，包括各种类型的软件、游戏、音乐、影视等等。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://thislinda.ysepan.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="LINDA杂货铺,这一片不知名的设计导航。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae02.alicdn.com/kf/U9105c3efda2448cf964befd3d4e9d25fO.jpg" class="lozad img-circle" width="40" src="ui/LINDA.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>LINDA杂货铺</strong></a><p class="overflowClip_2">LINDA杂货铺,这一片不知名的设计导航。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://iui.su/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="不死鸟:专注分享优质资源"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hd20e3d0a02ee475784294994bbb21eca4.png" class="lozad img-circle" width="40" src="ui/businiao.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>不死鸟</strong></a><p class="overflowClip_2">专注分享优质资源</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://tuostudy.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="上万款生活学习办公娱乐影视网课资源免费分享"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H941d45ba0b9e4b1b9836e58247250047E.png" class="lozad img-circle" width="40" src="ui/tuouxuexi.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>图欧学习资源库</strong></a><p class="overflowClip_2">上万款生活学习办公娱乐影视网课资源免费分享</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://qzbltushu.ysepan.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="考研资源学习资料免费分享网站"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hff2bd89b9f4f4bb0a9ad966968a41c8cZ.png" class="lozad img-circle" width="40" src="ui/kaoyan.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>考研资源</strong></a><p class="overflowClip_2">考研资源学习资料免费分享网站</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://storyset.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="StorySet免费插图素材网站提供了丰富的标签，包括：商业、工作、互联网、食物、城市、计算机等，你可以利用网站强大的标签功能找到你需要的插画素材，也可以利用网站的搜索功能找到你需要的插画素材"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H3fdfe57175db452da1ef2221ab00c77ez.png" class="lozad img-circle" width="40" src="ui/storyset.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>StorySet</strong></a><p class="overflowClip_2">StorySet免费插图素材网站提供了丰富的标签，包括：商业、工作、互联网、食物、城市、计算机等，你可以利用网站强大的标签功能找到你需要的插画素材，也可以利用网站的搜索功能找到你需要的插画素材</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://yunpan1.cc/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="云盘资源分享社区-提供阿里云盘资源、影视资源、学习资源、软件资源、动漫资源、游戏资源等分享。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hb1c8a09d5dc34d9298dc3e13853b3ed0P.png" class="lozad img-circle" width="40" src="ui/aliyun.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>阿里云盘资源分享社区</strong></a><p class="overflowClip_2">51240便民查询网创办于2004年7月，致力于搜集和提供各种实用工具，其中囊括了日常生活类、电脑网络类、文科工具类、实用计算类等百余种实用工具。诣在更好的服务于广大用户。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.bmcx.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="便民查询网(原51240便民查询网)一直致力于为网民提供方便、快捷的在线查询服务。"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hc23a4ccd5cb44361b85d69bcdea4ab73D.png" class="lozad img-circle" width="40" src="ui/便民查询网.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>便民查询网</strong></a><p class="overflowClip_2">51240便民查询网创办于2004年7月，致力于搜集和提供各种实用工具，其中囊括了日常生活类、电脑网络类、文科工具类、实用计算类等百余种实用工具。诣在更好的服务于广大用户。</p></div></div></div></div></div>
+            <br>
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="视频解析"></i>视频解析</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://docsmall.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://docsmall.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae02.alicdn.com/kf/Ue573a7cd3c5e45c1bd673e392625d734t.jpg" class="lozad img-circle" width="40" src="https://ae02.alicdn.com/kf/Ue573a7cd3c5e45c1bd673e392625d734t.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>docsmall</strong></a><p class="overflowClip_2">免费在线图片压缩、GIF压缩工具、PDF压缩工具、PDF合并工具、PDF分割工具</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://html2pug.now.sh/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://html2pug.now.sh/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/07/10/c72ced84b64377d9b709d98865fe7d2c.png" class="lozad img-circle" width="40" src="ui/fanwenmuban.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>HTM</strong></a><p class="overflowClip_2">Pug 是一款健壮、灵活、功能丰富的模板引擎，专门为 Node.js 平台开发。Pug 是由 Jade 改名而来。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://css2sass.herokuapp.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://css2sass.herokuapp.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="http://css2sass.herokuapp.com/images/favicon.ico" class="lozad img-circle" width="40" src="http://css2sass.herokuapp.com/images/favicon.ico" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>CSS转scss/sass</strong></a><p class="overflowClip_2">Convert CSS Snippets to Syntactically Awesome StyleSheets code</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.remove.bg/zh/upload&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.remove.bg/zh/upload"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae02.alicdn.com/kf/Hfe7cd53344ad45ab826400e46d6879edd.jpg" class="lozad img-circle" width="40" src="https://ae02.alicdn.com/kf/Hfe7cd53344ad45ab826400e46d6879edd.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>消除背景</strong></a><p class="overflowClip_2">选择一张图片并消除背景 - 100% 全自动 - 仅用 5 秒钟 - 无需点击 - 而且免费</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.tutieshi.com/compress/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.tutieshi.com/compress/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Had9d9087f6bb42278ccc0210e02e5af47.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Had9d9087f6bb42278ccc0210e02e5af47.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>图贴士压缩</strong></a><p class="overflowClip_2">可压缩GIF、PNG、JPG格式的图片</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.picdiet.com/zh-cn&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.picdiet.com/zh-cn"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hdd10921408e245978f411f138a6acf5es.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hdd10921408e245978f411f138a6acf5es.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>picdiet</strong></a><p class="overflowClip_2">Picdiet是一款在线批量压缩图片神器，它不需要后端服务器或者API的支持，仅通过你的浏览器来压缩图片大小，这意味着它压缩图片极快并且不会导致隐私或敏感图片泄漏。同时我们大量的测试结果也证明其压缩表现要远好于常规的压缩软件如：jpegoptim，jpegtran，jpegrescan和jpegmini</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://tinypng.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://tinypng.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/tinypng.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/tinypng.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>tinypng</strong></a><p class="overflowClip_2">Optimize your images with a perfect balance in quality and file size.</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://zh.recompressor.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://zh.recompressor.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hd82702f0b80e4f3d88b321f27d14f362o.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hd82702f0b80e4f3d88b321f27d14f362o.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>最优图片优化</strong></a><p class="overflowClip_2">可以压缩JPG与PNG、SVG</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://squoosh.app/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://squoosh.app/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H6aa479b05fbc4b56838a7b11af2930f6e.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H6aa479b05fbc4b56838a7b11af2930f6e.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>squoosh</strong></a><p class="overflowClip_2">Compress and compare images with different codecs, right in your browser</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.gaoding.com&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.gaoding.com"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/gaoding.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/gaoding.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>稿定抠图</strong></a><p class="overflowClip_2">免费在线抠图软件,图片快速换背景-抠白底图</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://en.m.fontke.com/tool/subfont/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://en.m.fontke.com/tool/subfont/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/08/05/b69d18f0cad47fad5fd7e9447d9a5069.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/08/05/b69d18f0cad47fad5fd7e9447d9a5069.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>字体子集生成器</strong></a><p class="overflowClip_2">字客网字体子集生成器可以让用户抽出一个字体文件里想要的字，再组成精减的字体文件，十分适合制作网页字体。操作简单，快捷，只需输入想要抽取的字，之后一键生成。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://en.m.fontke.com/tool/subfont/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://en.m.fontke.com/tool/subfont/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/08/05/8c045fbabfb40f3ea65242502ce43de1.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/08/05/8c045fbabfb40f3ea65242502ce43de1.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>字体子集生成器</strong></a><p class="overflowClip_2">使用此免费在线SVG 至PNG转换软件允许您将SVG文档转换成PNG文档，轻松且简单，无需安装任何软件。</p></div></div></div></div></div>
+            <br>
+ 
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="图片素材"></i>图片素材</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://www.iconfont.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.iconfont.cn/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/iconfont.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/iconfont.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>iconfont</strong></a><p class="overflowClip_2">阿里巴巴矢量图标库</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://dh.xiaokang.me/font5/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://dh.xiaokang.me/font5/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H139ad2194f9547d7b43005c8e18f048cR.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H139ad2194f9547d7b43005c8e18f048cR.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>小康的 Font Awesome 5 图标速查</strong></a><p class="overflowClip_2">简单快速的使用Font Awesome 5 图标</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/U2b267f8ebe6740f5aa0306f1375611a3B.jpg" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/U2b267f8ebe6740f5aa0306f1375611a3B.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Font Awesome 5 中文文档</strong></a><p class="overflowClip_2">Font Awesome 5 中文文档</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://fontawesome.com/icons?d=gallery&amp;g=hands&amp;m=free&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://fontawesome.com/icons?d=gallery&amp;g=hands&amp;m=free"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H139ad2194f9547d7b43005c8e18f048cR.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H139ad2194f9547d7b43005c8e18f048cR.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Font Awesome5图标库</strong></a><p class="overflowClip_2">快速查询Font Awesome5的图标</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://remixicon.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://remixicon.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae03.alicdn.com/kf/Hcd12c43a45e14e629c0d46f3e1ec6be8r.jpg" class="lozad img-circle" width="40" src="https://ae03.alicdn.com/kf/Hcd12c43a45e14e629c0d46f3e1ec6be8r.jpg" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>REMIX ICON</strong></a><p class="overflowClip_2">Simply Delightful Icon System</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://www.easyicon.net/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.easyicon.net/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/easyicon.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/webstack/assets/images/logos/easyicon.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>easyicon</strong></a><p class="overflowClip_2">PNG、ICO、ICNS格式图标搜索、图标下载服务</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://pixivic.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://pixivic.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hbd3f63cbdb504d288a5d6a6877eaa7ffa.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hbd3f63cbdb504d288a5d6a6877eaa7ffa.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Pixivic</strong></a><p class="overflowClip_2">提供Pixiv插画排行榜的浏览与下载以及热门排序的高级会员搜索</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.pixiv.net/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.pixiv.net/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hbd44886d24af40c3ac19af6b373d37204.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hbd44886d24af40c3ac19af6b373d37204.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Pixiv</strong></a><p class="overflowClip_2">由日本艺术家所组成的虚拟社群</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.pinterest.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.pinterest.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H007c1d984d47401591376258699206a9j.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H007c1d984d47401591376258699206a9j.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Pinterest</strong></a><p class="overflowClip_2">瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面底端</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://wallhaven.cc/toplist?page=3&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://wallhaven.cc/toplist?page=3"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hf887c2db312d40d1b5d27297a1edbeedu.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hf887c2db312d40d1b5d27297a1edbeedu.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>wallhaven顶部图</strong></a><p class="overflowClip_2">Most popular uploaded Wallpapers</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://unsplash.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://unsplash.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H7a74de7359e04abf8d1f46cd1d1f4709E.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H7a74de7359e04abf8d1f46cd1d1f4709E.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Unsplash</strong></a><p class="overflowClip_2">Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos.</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.colorhub.me/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.colorhub.me/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H0d8df69ba23c4a2baac8b0fac568b33e6.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H0d8df69ba23c4a2baac8b0fac568b33e6.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Colorhub</strong></a><p class="overflowClip_2">高清无版权图片，个人和商业用途免费</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.pexels.com/zh-cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.pexels.com/zh-cn/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H9a8321e954a74cd69b104685ae1eb185t.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H9a8321e954a74cd69b104685ae1eb185t.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Pexels</strong></a><p class="overflowClip_2">免费素材照片，可以在任何地方使用。✓ 免费用于商业用途 ✓ 无需注明归属</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://pixabay.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://pixabay.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hf57f57b587d44f3f97ad41ca64ef9617B.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hf57f57b587d44f3f97ad41ca64ef9617B.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Pixabay</strong></a><p class="overflowClip_2">Stunning free images &amp; royalty free stock</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://wallpaperhub.app/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://wallpaperhub.app/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/He027a64143464cc6ae5dbfbc3f589b795.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/He027a64143464cc6ae5dbfbc3f589b795.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>WallpaperHub</strong></a><p class="overflowClip_2">Download free wallpapers for your PC, phone and tablet.</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.behance.net/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.behance.net/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hf346fa9eae04495ea907707c4e6ba130g.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hf346fa9eae04495ea907707c4e6ba130g.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Behance</strong></a><p class="overflowClip_2">Behance 作品精选</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.zcool.com.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.zcool.com.cn/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H00876c41539945cdbf3ddef8e09450b9r.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H00876c41539945cdbf3ddef8e09450b9r.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>站酷 (ZCOOL)</strong></a><p class="overflowClip_2">站酷 (ZCOOL)，中国设计师互动平台。深耕设计领域十四年，站酷聚集了1100万设计师、摄影师、插画师、艺术家、创意人，设计创意群体中具有较高的影响力与号召力。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://coolbackgrounds.io/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://coolbackgrounds.io/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/07/18/e16fe2c09d2be01b4b6d1a584f0110ad.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/07/18/e16fe2c09d2be01b4b6d1a584f0110ad.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>特效背景生成</strong></a><p class="overflowClip_2">Cool Backgrounds</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://neumorphism.io/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://neumorphism.io/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/07/18/4079717c93f498bd2098c03f8a966e39.png" class="lozad img-circle" width="40" src="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2@latest/2020/07/18/4079717c93f498bd2098c03f8a966e39.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>拟物风格生成</strong></a><p class="overflowClip_2">Generate Soft-UI CSS code</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://backiee.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://backiee.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://files.alexhchu.com/2020/08/18/293e8388a6a9a.png" class="lozad img-circle" width="40" src="https://files.alexhchu.com/2020/08/18/293e8388a6a9a.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Backiee</strong></a><p class="overflowClip_2">The ultimate free wallpaper site and app. Available on Web, iPhone, Android, Xbox, and Windows platform as well</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://desktop.hdwallps.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://desktop.hdwallps.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://files.alexhchu.com/2020/08/18/280462535a19d.png" class="lozad img-circle" width="40"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Desktop Wallps</strong></a><p class="overflowClip_2">HD Wallpaper For Desktop Background</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://wallpaperaccess.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://wallpaperaccess.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://files.alexhchu.com/2020/08/18/280462535a19d.png" class="lozad img-circle" width="40"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>wallpaperaccess</strong></a><p class="overflowClip_2">Only the best wallpapers. Daily additions of new, awesome, HD wallpapers for desktop and phones.</p></div></div></div></div></div>
+            <br>
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="在线配色"></i>在线配色</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://www.peise.net/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.peise.net/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hfd1b76bfbfa448eb84132a08feb75468Y.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hfd1b76bfbfa448eb84132a08feb75468Y.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>peise</strong></a><p class="overflowClip_2">在线配色</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://webkul.github.io/coolhue/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://webkul.github.io/coolhue/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hebaaa27db8974449ad28d818d5660fb15.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hebaaa27db8974449ad28d818d5660fb15.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>webkul</strong></a><p class="overflowClip_2">Get coolest handpicked gradient colors collection palette for your next project, alternatively copy css or download as image too.</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://uigradients.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://uigradients.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/H9231fd2d81e04b2a9e705e7261e5aeb5E.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/H9231fd2d81e04b2a9e705e7261e5aeb5E.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>uigradients</strong></a><p class="overflowClip_2">uiGradients is a handpicked collection of beautiful color gradients for designers and developers.</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://color.adobe.com/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://color.adobe.com/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hca2e611ffa2e413ba5d892dc2404ad0a4.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hca2e611ffa2e413ba5d892dc2404ad0a4.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>adobe color</strong></a><p class="overflowClip_2">Adobe家的配色</p></div></div></div></div></div>
+            <br>
+ 
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="API接口"></i>API接口</h4>
+            <div class="row"><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://api.abcyun.co/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://api.abcyun.co/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hc86a829fd96b43999987ad84ce4aca56N.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hc86a829fd96b43999987ad84ce4aca56N.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>Hidove API</strong></a><p class="overflowClip_2">Hidove Api，提供简洁、稳定、易用的Api接口。</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;http://api.btstu.cn/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://api.btstu.cn/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hd8c81d03e2cb409f83aa2c940c99c678c.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hd8c81d03e2cb409f83aa2c940c99c678c.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>博天API</strong></a><p class="overflowClip_2">高速稳定免费APi接口调用平台</p></div></div></div></div><div class="col-sm-3"><div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://www.alapi.net/&quot;,&quot;_blank&quot;)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.alapi.net/"><div class="xe-comment-entry"> <a class="xe-user-img"><img data-src="https://ae01.alicdn.com/kf/Hd8c81d03e2cb409f83aa2c940c99c678c.png" class="lozad img-circle" width="40" src="https://ae01.alicdn.com/kf/Hd8c81d03e2cb409f83aa2c940c99c678c.png" data-loaded="true"></a><div class="xe-comment"> <a href="#" class="xe-user-name overflowClip_1"><strong>alapi</strong></a><p class="overflowClip_2">ALAPI,免费API服务,支持短网址缩短,快递查询,天气接口,翻译接口,网易云接口等...</p></div></div></div></div></div>
+            <br>
+         
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="设计素材"></i>设计素材</h4>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://www.iconfont.cn/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.iconfont.cn">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/iconfont.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>Iconfont</strong></a>
+                                <p class="overflowClip_2">阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://fontawesome.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="fontawesome.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/fontawesome.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#" class="xe-user-name overflowClip_1"><strong>Font
+                                        Awesome</strong></a>
+                                <p class="overflowClip_2">一个基于CSS 和 LESS 的字体和图标工具包</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://www.flaticon.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.flaticon.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/flaticon.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>Flaticon</strong></a>
+                                <p class="overflowClip_2">海量扁平化免费的图标库</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://icons8.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="icons8.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/icons8.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>icons8</strong></a>
+                                <p class="overflowClip_2">独特系统平台风格和web图标库，下载免费图标，音乐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://www.58pic.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.58pic.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/58pic.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>千图网</strong></a>
+                                <p class="overflowClip_2">海量原创设计模板免费下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("http://www.nipic.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.nipic.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/nipic.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>昵图网</strong></a>
+                                <p class="overflowClip_2">国内海量平面免费素材下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://588ku.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="588ku.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/588ku.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>千库网</strong></a>
+                                <p class="overflowClip_2">免费 png 图片背景素材下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://www.pexels.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.pexels.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/pexels.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>Pexels</strong></a>
+                                <p class="overflowClip_2">才华横溢的摄影作者在这里免费分享最精彩的素材照片和视频</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://bing.ioliu.cn/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="bing.ioliu.cn">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/bing.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>必应壁纸</strong></a>
+                                <p class="overflowClip_2">必应每日高清壁纸</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://www.piqsels.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.piqsels.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/piqsels.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>Piqsels</strong></a>
+                                <p class="overflowClip_2">精美的免版税图库</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("http://sicangziti.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="sicangziti.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/sicangziti.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>私藏字体</strong></a>
+                                <p class="overflowClip_2">优质字体免费下载站</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("http://www.1ppt.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.1ppt.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/1ppt.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#" class="xe-user-name overflowClip_1"><strong>第一 PPT
+                                        网</strong></a>
+                                <p class="overflowClip_2">免费 PPT 模板下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://www.woodo.cn/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="www.woodo.cn">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/woodo.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>吾道幻灯片</strong></a>
+                                <p class="overflowClip_2">全新的office生产力工具，支持演示文稿、PPT模板、协同办公，可以帮助用户轻松创建具有视觉吸引力的幻灯片</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://mixkit.co/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="mixkit.co">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/mixkit.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>Mixkit</strong></a>
+                                <p class="overflowClip_2">免费、高质量、可商用的视频素材分享网站</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("http://thestocks.im/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="thestocks.im">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/thestocks.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#" class="xe-user-name overflowClip_1"><strong>The
+                                        Stocks</strong></a>
+                                <p class="overflowClip_2">对各大图片网站进行整合，免费优质图片下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://bz.zzzmh.cn/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="bz.zzzmh.cn">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/zzzmh.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>极简壁纸</strong></a>
+                                <p class="overflowClip_2">高质量精品壁纸网站</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://images.nasa.gov/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="images.nasa.gov">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/nasa.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#" class="xe-user-name overflowClip_1"><strong>NASA Image
+                                        and Video Library</strong></a>
+                                <p class="overflowClip_2">美国国家航天局的官方库，从此太空类的素材再也不是问题</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://unsplash.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="unsplash.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/unsplash.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>Unsplash</strong></a>
+                                <p class="overflowClip_2">质量超高的免费图片素材库，无需注册，直接下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick='window.open("https://wordart.com/","_blank")' data-toggle="tooltip"
+                        data-placement="bottom" data-original-title="wordart.com">
+                        <div class="xe-comment-entry"><a class="xe-user-img"><img
+                                    src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/images/logo/wordart.png"
+                                    class="img-circle" width="40"></a>
+                            <div class="xe-comment"><a href="#"
+                                    class="xe-user-name overflowClip_1"><strong>WordArt</strong></a>
+                                <p class="overflowClip_2">文字云工具</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+          
+ <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="我的站点"></i>我的站点</h4>
+ <div class="row">
+    <div class="col-sm-3">
+        <div class="xe-widget xe-conversations box2 label-info" onclick="window.open(&quot;https://qm.qq.com/cgi-bin/qm/qr?k=IpKdKA7EZggDwngGFGAuAbeZguUaIx_E&noverify=0)" data-toggle="tooltip" data-placement="bottom" title=""https://qm.qq.com/cgi-bin/qm/qr?k=IpKdKA7EZggDwngGFGAuAbeZguUaIx_E&noverify=0"><div class="xe-comment-entry">
+             <a class="xe-user-img">
+                 <img data-src="https://avatar.csdnimg.cn/8/A/E/3_weixin_42529972.jpg" class="lozad img-circle" width="40" src="https://avatar.csdnimg.cn/8/A/E/3_weixin_42529972.jpg" data-loaded="true"></a>
+                 <div class="xe-comment"> 
+                     <a href="https://qm.qq.com/cgi-bin/qm/qr?k=IpKdKA7EZggDwngGFGAuAbeZguUaIx_E&noverify=0" class="xe-user-name overflowClip_1">
+                         <strong>QQ</strong></a>
+                         <p class="overflowClip_2">个人QQ</p>
+                    </div>
+                </div>
+           </div>
+   </div>
+   
+                    
+            </div>
+                         
+            <br>
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right:7px" id="更多导航"></i>更多导航</h4>
+            <p>未完待续...</p>
+            <br>
+            <footer class="main-footer sticky footer-type-1">
+                <div class="footer-inner">
+                    <div class="footer-text">COPYRIGHT<i class="far fa-copyright"></i> 2023 - 2023 <a
+                            href="https://github.com/WebStackPage/WebStackPage.github.io"
+                            target="_blank"><strong>WEBSTACK</strong></a> 丨 DESIGNED BY <a href="http://viggoz.com"
+                            target="_blank"><strong>VIGGO</strong></a> 丨 CHANGED BY <a href="https://yangchaoyi.vip"
+                            target="_blank"><strong>Chocolate</strong></a></div>
+                    <div class="go-up"><a href="#" rel="go-top"><i class="fa-angle-up"></i></a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            return $(document).on("click", ".has-sub", function () {
+                var e = $(this);
+                $(this).hasClass("expanded") ? $(".has-sub ul").each(function (s, i) {
+                    var t = $(this);
+                    e.find("ul")[0] != i && setTimeout(function () {
+                        t.attr("style", "")
+                    }, 300)
+                }) : setTimeout(function () {
+                    e.find("ul").attr("style", "")
+                }, 300)
+            }), $(".user-info-menu .hidden-sm").click(function () {
+                $(".sidebar-menu").hasClass("collapsed") ? $(".has-sub.expanded > ul").attr("style",
+                    "") : $(".has-sub.expanded > ul").show()
+            }), $("#main-menu li ul li").click(function () {
+                $(this).siblings("li").removeClass("active"), $(this).addClass("active")
+            }), $("a.smooth").click(function (s) {
+                s.preventDefault(), public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass(
+                    "mobile-is-visible"), ps_destroy(), $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top - 30
+                }, {
+                    duration: 500,
+                    easing: "swing"
+                })
+            }), !1
+        });
+        var href = "",
+            pos = 0;
+        $("a.smooth").click(function (s) {
+            $("#main-menu li").each(function () {
+                    $(this).removeClass("active")
+                }), $(this).parent("li").addClass("active"), s.preventDefault(), href = $(this).attr("href"),
+                pos = $(href).position().top - 30
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/resizeable.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/joinable.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/xenon-api.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/xenon-toggles.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/xenon-custom.js"></script>
+</body>
+</html>
